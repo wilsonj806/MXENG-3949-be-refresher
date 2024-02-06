@@ -12,7 +12,6 @@ require 'faker'
 (1..5).each do |id|
   first_name = Faker::Name.first_name
   last_name = Faker::Name.last_name
-  puts "#{first_name} #{last_name}"
   User.create!(
     id: id,
     first_name: first_name,
